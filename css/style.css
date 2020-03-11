@@ -35,6 +35,9 @@ button {
 button:focus {
 	outline: 0 !important;
 }
+input:focus{
+	outline: none;
+}
 .main {
 	background: #f0f2f8;
 	padding-top: 48px;
@@ -337,12 +340,55 @@ button:focus {
 	margin-top: 11px;
 	margin-bottom: 11px;
 }
+.project-item:hover {
+	box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2)	
+}
 .project-img {
 	width: 77.8%;
 	margin: 30px auto;
 }
 .project img {
 	width: 100%;
+}
+.project-item:hover img {
+	-webkit-filter: grayscale(100%);
+  	-moz-filter: grayscale(100%);
+  	-ms-filter: grayscale(100%);
+  	-o-filter: grayscale(100%);
+  	filter: grayscale(100%);
+  	filter: gray; /* IE 6-9 */
+  	opacity: 0.7;
+  	transition: 0.5s;
+}
+.project-item:hover .project-img {
+	background: #d72c2c;
+	transition: 0.5s;
+}
+.project-item__btn {
+	display: none;
+	font-size: 15px;
+	margin-top: 52px;
+	color: #e42f44;
+	background: none;
+	border: none;
+	width: 300px;
+	align-items: center;
+
+}
+.project-item:hover .project-item__btn {
+	display: flex;
+	justify-content: center;
+	transition: 0.5s;
+}
+.project-item__btn .arrow {
+	display: block;
+	color: #e42f44;
+	border: 1px solid #e42f44;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	line-height: 50px;
+	margin-right: 20px;
 }
 .project-item__name {
 	font-size: 12px;
@@ -356,10 +402,16 @@ button:focus {
 	font-family: 'Times New Roman', serif;
 	margin-left: 10.8%;
 }
+.project-item:hover .project-item__title {
+	display: none;
+}
 .project-item__text {
 	font-size: 14px;
 	margin-left: 10.8%;
 	margin-top: 20px;
+}
+.project-item:hover .project-item__text {
+	display: none;
 }
 .project-item__text span {
 	letter-spacing: 0.08rem;
@@ -388,7 +440,6 @@ button:focus {
 	color: #b4acac;
     font-family: 'Times New Roman', serif;
     font-size: 11.46vw;
-    width: 100%;
     text-transform: uppercase;
     letter-spacing: 2px;
     opacity: 0.1;
@@ -474,10 +525,7 @@ button:focus {
 	border-top: 14px solid #fff;
 	border-right: 14px solid #fff;
 	background: #94969c;
-	padding-left: 10.94%;
-	padding-right: 7.29%;
-	padding-top: 6.25%;
-	padding-bottom: 6.25%;
+	padding: 130px 138px 130px 200px;
 }
 .contacts {
 	display: flex;
@@ -487,17 +535,19 @@ button:focus {
 }
 .contacts-text {
 	width: 33.66%;
+	margin-bottom: 80px;
 }
 .contacts-text__item {
 	display: block;
 	color: #fff;
 	width: 100%;
-	font-size: 0.78vw;
+	font-size: 14px;
 	line-height: 1.9em;
 }
 .contacts-text__item_bold {
 	margin-bottom: 21.63%;
-	font-size: 0.83vw;
+	font-size: 16px;
+	font-weight: 600;
 }
 .menu {
 	display: flex;
@@ -521,7 +571,7 @@ li {
 a {
 	text-decoration: none;
 	font-family: "Times new roman", serif;
-	font-size: 1.15vw;
+	font-size: 22px;
 	color: #fff;
 	font-weight: normal;
 }
@@ -547,4 +597,40 @@ a {
 	font-size: 14px;
 	width: 160px;
 	margin-left: 18.44%;	
+}
+.up-btn {
+	position: absolute;
+	display: flex;
+	flex-flow: column-reverse;
+	font-size: 15px;
+	margin-top: 52px;
+	color: #fff;
+	background: none;
+	border: none;
+	width: 300px;
+	align-items: center;
+	bottom: 43px;
+	left: -60px;
+}
+.up-btn .arrow {
+	display: block;
+	color: #fff;
+	border: 1px solid #fff;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	line-height: 50px;
+	margin-right: 15px;
+}
+.up-text {
+	transform: rotate(270deg);
+    transform-origin: bottom;
+    margin-bottom: 40px;
+    font-weight: normal;
+}
+
+@media screen and (max-width: 1900px) {
+	.contacts-wrap {
+
+	}
 }
