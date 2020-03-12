@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Itta Мебель</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
@@ -43,12 +43,48 @@
 				</div>
 				<div class="offer">
 					<h1>Высокие технологии комфорта</h1>
-					<p>Производство и монтаж мебели от идеи 
+					<p class="offer__text">Производство и монтаж мебели от идеи 
 					до ввода в эксплуатацию</p>
-					<button class="btn">
+					<button class="btn offer__btn" id="start">
 						<span class="arrow">&rarr;</span>
 						<span>Оставить заявку</span>
 					</button>
+					<div id="popUp" class="pop-up">
+						<div id="overlay" class="overlay"></div>
+						<div class="pop-up-content">
+							<div class="close-wrap">
+								<div class="close" id="close">
+									<span></span>
+									<span></span>
+								</div>
+							</div>
+							<img src="img/logo.svg" alt="" class="logo">
+							<div class="feedback">
+								<h2 class="feedback__title">Нужен творческий проект? Давайте обсудим!</h2>
+								<p class="feedback__text">Заполните форму ниже  и мы свяжемся с вами для уточнения деталей</p>
+								<div class="feedback-form">
+									<input type="name" placeholder="Имя" name="name" class="feedback__input" required>
+									<input type="tel" placeholder="Телефон" name="tel" class="feedback__input" required>
+									<button type="submit" class="btn">
+										<span class="arrow">&rarr;</span>
+										<span>Отправить</span>
+									</button>
+								</div>
+							</div>
+							<div class="pop-up-info">
+				    			<p class="phone phone_margin">
+									<a href="tel:+79190000000">
+										+7(919) 000-00-00
+									</a>
+								</p>
+								<p class="email">
+									<a href="mailto:zakaz@itta-mebel.ru">
+										zakaz@itta-mebel.ru
+									</a>	
+								</p>
+				    		</div>	
+						</div>
+					</div>
 				</div>
 			</div>
 			<div class="addet">
@@ -57,6 +93,48 @@
 				</div>
 			</div>
 		</div>
+		<div class="toggle-menu">
+			<div class="pop-up">
+		    	<div class="pop-up-content">
+		    		<div class="toggle-menu-item">
+		    			<img src="img/logo.svg" alt="" class="logo">
+		    			<button class="btn" id="start-menu">
+							<span class="arrow">&rarr;</span>
+							<span>Оставить заявку</span>
+						</button>
+		    		</div>
+		    		<div class="toggle-menu-item">
+		    			<div class="toggle-menu-list">
+		    				<a class="toggle-menu__link" href="#">Главная</a>
+					        <a class="toggle-menu__link" href="#">О компании</a>
+					        <a class="toggle-menu__link" href="#">Каталог</a>
+					        <a class="toggle-menu__link" href="#">Контакты</a>
+		    			</div>
+		    		</div>
+		    		<div class="pop-up-info">
+		    			<p class="phone phone_margin">
+							<a href="tel:+79190000000">
+								+7(919) 000-00-00
+							</a>
+						</p>
+						<p class="email">
+							<a href="mailto:zakaz@itta-mebel.ru">
+								zakaz@itta-mebel.ru
+							</a>	
+						</p>
+		    		</div>		        
+			    </div>
+			</div>
+			<div class="toggle-menu-btn">
+				<div class="toggle-menu__icon">
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+			</div>
+		</div>
+		
 	</header>
 	<section class="about" id="about">
 		<div class="square"></div>
@@ -266,7 +344,7 @@
 	    		<p class="credits">	&copy;2009-2019</p>
 	    		<p class="credits">Все права защищены</p>
 	    	</div>
-	    	<button class="up-btn">
+	    	<button class="up-btn" id="up-btn">
 				<span class="arrow">&uarr;</span>
 				<span class="up-text">Наверх</span>
 			</button>
