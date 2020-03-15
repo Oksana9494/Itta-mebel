@@ -16,20 +16,30 @@
 	<header id="main" class="main">
 		<div class="nav">
 			<img src="img/logo.svg" alt="" class="logo">
-			<p class="phone">
-				<a href="tel:+79190000000">
-					+7(919) 000-00-00
-				</a>
-			</p>
-			<p class="email">
-				<a href="mailto:zakaz@itta-mebel.ru">
-					zakaz@itta-mebel.ru
-				</a>	
-			</p>
+			<div class="info">
+				<p class="phone">
+					<a href="tel:+79190000000">
+						+7(919) 000-00-00
+					</a>
+				</p>
+				<p class="email">
+					<a href="mailto:zakaz@itta-mebel.ru">
+						zakaz@itta-mebel.ru
+					</a>	
+				</p>
+			</div>
 		</div>
 		<div class="header-content">
 			<div class="container">
 				<span class="rectangle"></span>
+				<div class="offer">
+					<h1>Высокие технологии комфорта</h1>
+					<p class="offer__text">Производство и монтаж мебели от идеи до ввода в эксплуатацию</p>
+					<button class="btn offer__btn" id="start">
+						<span class="arrow">&rarr;</span>
+						<span>Оставить заявку</span>
+					</button>
+				</div>
 				<div class="block-slider">
 					<div>
 						<img src="img/offer-pic1.jpg" alt="">
@@ -41,51 +51,7 @@
 						<img src="img/offer-pic3.jpg" alt="">
 					</div>					
 				</div>
-				<div class="offer">
-					<h1>Высокие технологии комфорта</h1>
-					<p class="offer__text">Производство и монтаж мебели от идеи 
-					до ввода в эксплуатацию</p>
-					<button class="btn offer__btn" id="start">
-						<span class="arrow">&rarr;</span>
-						<span>Оставить заявку</span>
-					</button>
-					<div id="popUp" class="pop-up">
-						<div id="overlay" class="overlay"></div>
-						<div class="pop-up-content">
-							<div class="close-wrap">
-								<div class="close" id="close">
-									<span></span>
-									<span></span>
-								</div>
-							</div>
-							<img src="img/logo.svg" alt="" class="logo">
-							<div class="feedback">
-								<h2 class="feedback__title">Нужен творческий проект? Давайте обсудим!</h2>
-								<p class="feedback__text">Заполните форму ниже  и мы свяжемся с вами для уточнения деталей</p>
-								<div class="feedback-form">
-									<input type="name" placeholder="Имя" name="name" class="feedback__input" required>
-									<input type="tel" placeholder="Телефон" name="tel" class="feedback__input" required>
-									<button type="submit" class="btn">
-										<span class="arrow">&rarr;</span>
-										<span>Отправить</span>
-									</button>
-								</div>
-							</div>
-							<div class="pop-up-info">
-				    			<p class="phone phone_margin">
-									<a href="tel:+79190000000">
-										+7(919) 000-00-00
-									</a>
-								</p>
-								<p class="email">
-									<a href="mailto:zakaz@itta-mebel.ru">
-										zakaz@itta-mebel.ru
-									</a>	
-								</p>
-				    		</div>	
-						</div>
-					</div>
-				</div>
+				
 			</div>
 			<div class="addet">
 				<div class="container">
@@ -134,7 +100,42 @@
 				</div>
 			</div>
 		</div>
-		
+		<div id="popUp" class="pop-up">
+			<div id="overlay" class="overlay"></div>
+			<div class="pop-up-content">
+				<div class="close-wrap">
+					<div class="close" id="close">
+						<span></span>
+						<span></span>
+					</div>
+				</div>
+				<img src="img/logo.svg" alt="" class="logo">
+				<div class="feedback">
+					<h2 class="feedback__title">Нужен творческий проект? Давайте обсудим!</h2>
+					<p class="feedback__text">Заполните форму ниже  и мы свяжемся с вами для уточнения деталей</p>
+					<div class="feedback-form">
+						<input type="name" placeholder="Имя" name="name" class="feedback__input" required>
+						<input type="tel" placeholder="Телефон" name="tel" class="feedback__input" required>
+						<button type="submit" class="btn">
+							<span class="arrow">&rarr;</span>
+							<span>Отправить</span>
+						</button>
+					</div>
+				</div>
+				<div class="pop-up-info">
+				    <p class="phone phone_margin">
+						<a href="tel:+79190000000">
+							+7(919) 000-00-00
+						</a>
+					</p>
+					<p class="email">
+						<a href="mailto:zakaz@itta-mebel.ru">
+							zakaz@itta-mebel.ru
+						</a>	
+					</p>
+				</div>	
+			</div>
+		</div>		
 	</header>
 	<section class="about" id="about">
 		<div class="square"></div>
@@ -294,11 +295,19 @@
     			</div>
     		</div>
     		<div class="facts-slider">
-    			<div>
+    			<div class="facts-img">
     				<img src="img/facts-img.jpg" alt="">  
     			</div>
-    			<div>
+    			<div class="facts-img">
     				<img src="img/facts-img2.jpg" alt="">  
+    			</div> 			
+    		</div>
+    		<div class="facts-slider-responsive">
+    			<div class="facts-img_responsive">
+    				<img src="img/facts-img1-600.jpg" alt="">  
+    			</div>
+    			<div class="facts-img_responsive">
+    				<img src="img/facts-img2-600.jpg" alt="">  
     			</div> 			
     		</div>
     	</div>
