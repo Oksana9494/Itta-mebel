@@ -522,7 +522,7 @@ input:focus{
 }
 .project__title {
 	margin-left: auto;
-	width: 350px;
+	width: 390px;
 	margin-bottom: 80px;
 	margin-top: 65px;
 }
@@ -977,6 +977,9 @@ input:focus{
 @media screen and (max-width: 1900px) {
 	h2 {
 		font-size: 44px;
+	}
+	.project__title {
+		width: 350px;
 	}
 	.contacts-wrap {
 		padding: 90px 80px 70px 130px;
