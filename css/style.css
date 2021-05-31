@@ -136,6 +136,7 @@ input:focus{
 }
 .hidden {
 	overflow: hidden;
+	margin-right: 17px;
 }
 .toggle-menu-item {
 	display: -moz-flex;
@@ -1110,6 +1111,9 @@ input:focus{
 	}
 }
 @media screen and (max-width: 1020px) {
+	.hidden {
+		margin-right: initial;
+	}
 	.main {
 		padding-bottom: 40px;
 	}
