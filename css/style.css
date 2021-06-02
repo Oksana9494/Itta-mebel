@@ -16,10 +16,12 @@ body {
     position: relative;
     margin: 0;
     padding: 0;
+    -webkit-tap-highlight-color: transparent;
 }
 h1, h2, h3, h4, h5, h6, p{
     margin: 0;
     padding: 0;
+    -webkit-tap-highlight-color: transparent;
 }
 /* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
 
@@ -30,16 +32,19 @@ h2 {
 	line-height: 1em;
 }
 div {
+	-webkit-tap-highlight-color: transparent;
 	-webkit-box-sizing: border-box;
 	        box-sizing: border-box;
 }
 button {
+	-webkit-tap-highlight-color: transparent;
 	cursor: pointer;
 }
 button:focus {
 	outline: 0 !important;
 }
 input:focus{
+	-webkit-tap-highlight-color: transparent;
 	outline: none;
 }
 .main {
@@ -570,7 +575,7 @@ input:focus{
 	position: absolute;
 	display: block;
 	width: 50px;
-	height: 2px;
+	height: 3px;
 	background: #c7c7c7;
 	top: 23px;
 	left: 25px;
@@ -606,7 +611,7 @@ input:focus{
 	position: absolute;
 	display: block;
 	width: 50px;
-	height: 2px;
+	height: 3px;
 	background: #c7c7c7;
 	top: 23px;
 	left: -26px;
