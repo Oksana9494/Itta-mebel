@@ -869,6 +869,7 @@ input:focus{
 	width: 100%;
 	font-size: 14px;
 	line-height: 1.9em;
+	text-decoration: none;
 }
 .contacts-text__item_bold {
 	margin-bottom: 21.63%;
